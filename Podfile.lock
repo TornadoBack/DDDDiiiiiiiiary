@@ -1,5 +1,6 @@
 PODS:
   - BonMot (4.0.1)
+  - ChameleonSwift (2.2)
   - CryptoSwift (0.6.6)
   - FileKit (4.0.0)
   - IGListKit (2.0.0)
@@ -14,6 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - BonMot (= 4.0.1)
+  - ChameleonSwift
   - CryptoSwift (~> 0.6.5)
   - FileKit (~> 4.0.0)
   - IGListKit (~> 2.0.0)
@@ -24,6 +26,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   BonMot: d8c3548412fcbb3b5f877f2097a5ca23f9adf5b4
+  ChameleonSwift: 3b2a66db07a6e5bc176c8590b5182c4d952481cb
   CryptoSwift: 88592381b73f36e192124539390a7c9bacda76af
   FileKit: 2589d0393b3bfdc599c2ba6e41419be6db4279e0
   IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
@@ -33,6 +36,6 @@ SPEC CHECKSUMS:
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   Timepiece: 59cdc48089645cce07803c15116293b346ca457d
 
-PODFILE CHECKSUM: e42983085a7431e6d429564b886d93685bdf86d6
+PODFILE CHECKSUM: 82c41eae2ddacf62d2449474c08f8e18d0577326
 
 COCOAPODS: 1.1.1

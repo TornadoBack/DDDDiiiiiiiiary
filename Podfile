@@ -11,4 +11,5 @@ use_frameworks!
      pod 'FileKit', '~> 4.0.0'
      pod 'PathKit','0.7.0'
      pod 'BonMot','4.0.1'
+     pod 'ChameleonSwift'
   end
