@@ -5,6 +5,7 @@ PODS:
   - FileKit (4.0.0)
   - IGListKit (2.0.0)
   - PathKit (0.7.0)
+  - Popover (1.0.1)
   - Realm (2.1.1):
     - Realm/Headers (= 2.1.1)
   - Realm/Headers (2.1.1)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - FileKit (~> 4.0.0)
   - IGListKit (~> 2.0.0)
   - PathKit (= 0.7.0)
+  - Popover
   - RealmSwift (~> 2.1.1)
   - SnapKit (~> 3.0.2)
   - Timepiece (~> 1.0.1)
@@ -31,11 +33,12 @@ SPEC CHECKSUMS:
   FileKit: 2589d0393b3bfdc599c2ba6e41419be6db4279e0
   IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
   PathKit: f8260c3e41bf4d552f3603853e32a5b325a176d4
+  Popover: 90c76e430242891c184b71bd4343438cbaa6b2ba
   Realm: a55959c0b171a5fe5267406d17f314fec3cefaae
   RealmSwift: 749fd955bf8d6471c21d218b9389a47aaeccfe3f
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   Timepiece: 59cdc48089645cce07803c15116293b346ca457d
 
-PODFILE CHECKSUM: 82c41eae2ddacf62d2449474c08f8e18d0577326
+PODFILE CHECKSUM: 6c2d08422f700e15d85307c299987a73e16a5754
 
 COCOAPODS: 1.1.1

@@ -12,4 +12,5 @@ use_frameworks!
      pod 'PathKit','0.7.0'
      pod 'BonMot','4.0.1'
      pod 'ChameleonSwift'
+     pod 'Popover'
   end

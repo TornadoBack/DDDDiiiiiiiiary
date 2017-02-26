@@ -27,6 +27,18 @@ class DDDDiaryEditVC: UIViewController, UITextViewDelegate, UIImagePickerControl
         self.view.addSubview(diaryEditView)
         self.view.addSubview(diaryToolBar)
         
+        self.topView.addSubview(noteBookImage)
+        self.topView.addSubview(noteBookLable)
+        
+        self.middleView.addSubview(diaryMonthLable)
+        self.middleView.addSubview(diaryWeekLable)
+        self.middleView.addSubview(diaryDayLable)
+        self.middleView.addSubview(diaryTitleLable)
+        self.middleView.addSubview(diaryTimeLable)
+        self.middleView.addSubview(diaryMoodBtn)
+        self.middleView.addSubview(diaryWeatherBtn)
+        self.middleView.addSubview(diaryLocationBtn)
+        
         p_layoutSubViews()
 
         // Do any additional setup after loading the view.
@@ -69,16 +81,6 @@ class DDDDiaryEditVC: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     
     //MARK- Target
     
@@ -138,10 +140,66 @@ class DDDDiaryEditVC: UIViewController, UITextViewDelegate, UIImagePickerControl
         return view
     }()
     
+    lazy var noteBookImage: UIImageView = {
+        let view = UIImageView()
+        return view
+    }()
+    
+    lazy var noteBookLable: UILabel = {
+        let lable = UILabel()
+        lable.numberOfLines = 1
+        return lable
+    }()
+    
     lazy var middleView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.white
         return view
+    }()
+    
+    lazy var diaryDayLable: UILabel = {
+        let lable = UILabel()
+        lable.numberOfLines = 1
+        return lable
+    }()
+    
+    lazy var diaryWeekLable: UILabel = {
+        let lable = UILabel()
+        lable.numberOfLines = 1
+        return lable
+    }()
+    
+    lazy var diaryMonthLable: UILabel = {
+        let lable = UILabel()
+        lable.numberOfLines = 1
+        return lable
+    }()
+
+    lazy var diaryTitleLable: UILabel = {
+        let lable = UILabel()
+        lable.numberOfLines = 1
+        return lable
+    }()
+    
+    lazy var diaryTimeLable: UILabel = {
+        let lable = UILabel()
+        lable.numberOfLines = 1
+        return lable
+    }()
+    
+    lazy var diaryWeatherBtn: UIButton = {
+        let btn = UIButton()
+        return btn
+    }()
+    
+    lazy var diaryMoodBtn: UIButton = {
+        let btn = UIButton()
+        return btn
+    }()
+    
+    lazy var diaryLocationBtn: UIButton = {
+        let btn = UIButton()
+        return btn
     }()
     
     lazy var diaryEditView: DDDRichTextView = {
