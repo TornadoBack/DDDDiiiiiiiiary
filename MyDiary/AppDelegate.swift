@@ -25,8 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func p_initTabBar(){
         let tabVc = UITabBarController()
+        
+        let vpVC = VPDDDDiaryListModuleWireFrame.creatVPDDDDiaryListModuleModule()
+        
+        
+        
         tabVc.addChildViewController(
-            UINavigationController(rootViewController: MainViewController()))
+            UINavigationController(rootViewController: vpVC))
         tabVc.addChildViewController(
             UINavigationController(rootViewController: MainViewController()))
         

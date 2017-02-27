@@ -13,6 +13,14 @@
 		061B41561E0656B90044F29E /* DDDRichTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061B41551E0656B90044F29E /* DDDRichTextView.swift */; };
 		061B41591E0659780044F29E /* DDDDiaryEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061B41581E0659780044F29E /* DDDDiaryEditVC.swift */; };
 		062FFFD81E03FDBD00270E3C /* DDDDiaryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD71E03FDBD00270E3C /* DDDDiaryListCell.swift */; };
+		0649D1AE1E630EB600C826E7 /* VPDDDDiaryListModuleAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1A01E630EB600C826E7 /* VPDDDDiaryListModuleAPIDataManager.swift */; };
+		0649D1AF1E630EB600C826E7 /* VPDDDDiaryListModuleLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1A21E630EB600C826E7 /* VPDDDDiaryListModuleLocalDataManager.swift */; };
+		0649D1B01E630EB600C826E7 /* VPDDDDiaryListModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1A41E630EB600C826E7 /* VPDDDDiaryListModuleInteractor.swift */; };
+		0649D1B11E630EB600C826E7 /* VPDDDDiaryListModuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1A51E630EB600C826E7 /* VPDDDDiaryListModuleItem.swift */; };
+		0649D1B21E630EB600C826E7 /* VPDDDDiaryListModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1A71E630EB600C826E7 /* VPDDDDiaryListModulePresenter.swift */; };
+		0649D1B31E630EB600C826E7 /* VPDDDDiaryListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1A91E630EB600C826E7 /* VPDDDDiaryListModuleProtocols.swift */; };
+		0649D1B41E630EB600C826E7 /* VPDDDDiaryListModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1AB1E630EB600C826E7 /* VPDDDDiaryListModuleView.swift */; };
+		0649D1B51E630EB600C826E7 /* VPDDDDiaryListModuleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1AD1E630EB600C826E7 /* VPDDDDiaryListModuleWireFrame.swift */; };
 		068824181E03F0F0002970DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068824171E03F0F0002970DF /* AppDelegate.swift */; };
 		0688241A1E03F0F0002970DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068824191E03F0F0002970DF /* ViewController.swift */; };
 		0688241D1E03F0F0002970DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0688241B1E03F0F0002970DF /* Main.storyboard */; };
@@ -24,6 +32,18 @@
 		0688244E1E03F747002970DF /* DDDDiaryListDiarySC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0688244D1E03F747002970DF /* DDDDiaryListDiarySC.swift */; };
 		06F095481E09246B0097F12C /* HtmlStringToATTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F095471E09246B0097F12C /* HtmlStringToATTR.swift */; };
 		1576D075DE9184C237A04775 /* Pods_MyDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2782541092D3C5168B1007 /* Pods_MyDiary.framework */; };
+		3325D50533A1897E690094FB /* VPDDDDiaryHomeListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B660DF66609F3C1EEBBB42 /* VPDDDDiaryHomeListInteractorInput.swift */; };
+		51CFC85C323BD55CB348F387 /* VPDDDDiaryHomeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C947395F8E76D0DF56E32 /* VPDDDDiaryHomeListPresenter.swift */; };
+		53AC04BE9EFC8B737E2E52E7 /* VPDDDDiaryHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209CDA381DAD583122D12C4 /* VPDDDDiaryHomeListViewController.swift */; };
+		5D373A88C5C09D86FE37FB74 /* VPDDDDiaryHomeListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85743D3FD9C1787D70294C4D /* VPDDDDiaryHomeListInteractorOutput.swift */; };
+		654F728BB580CDBD014DC9D4 /* VPDDDDiaryHomeListInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6420AC7B9B7A9D3BF08C842 /* VPDDDDiaryHomeListInitializer.swift */; };
+		7CADFA9452E60A943F20FDB0 /* VPDDDDiaryHomeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621DB16EFC3EA172188F7855 /* VPDDDDiaryHomeListRouter.swift */; };
+		908AFD6E2DAA2AE1D9FC88D4 /* VPDDDDiaryHomeListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24660D804E9ABCA979371722 /* VPDDDDiaryHomeListConfigurator.swift */; };
+		A48F2035C2BDE8C5D10839CF /* VPDDDDiaryHomeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230925806CF10D3C228C5718 /* VPDDDDiaryHomeListInteractor.swift */; };
+		B8EE4ABCFB4092B99817E257 /* VPDDDDiaryHomeListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646C0E173C4802E7FB37E36 /* VPDDDDiaryHomeListRouterInput.swift */; };
+		BA58F061B300472FE1AA6309 /* VPDDDDiaryHomeListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41917C88E1C12A22E30F02 /* VPDDDDiaryHomeListViewInput.swift */; };
+		C6C1D0B65515919F7A7E0B3F /* VPDDDDiaryHomeListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01B35679D2053A01FFB421 /* VPDDDDiaryHomeListViewOutput.swift */; };
+		D13948984B7D10C769536071 /* VPDDDDiaryHomeListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F544F289464AAD15AF8C209 /* VPDDDDiaryHomeListModuleInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +64,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0209CDA381DAD583122D12C4 /* VPDDDDiaryHomeListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListViewController.swift; sourceTree = "<group>"; };
 		061B414E1E0519B10044F29E /* DiaryEnumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiaryEnumModel.swift; path = M/Diary/DiaryEnumModel.swift; sourceTree = "<group>"; };
-		061B41501E05317C0044F29E /* DDDDiaryListMonthSC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListMonthSC.swift; path = C/SectionControllers/DDDDiaryListMonthSC.swift; sourceTree = "<group>"; };
-		061B41521E0537A90044F29E /* DDDDiaryListMonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListMonthCell.swift; path = V/CollectionViewCells/DDDDiaryListMonthCell.swift; sourceTree = "<group>"; };
+		061B41501E05317C0044F29E /* DDDDiaryListMonthSC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListMonthSC.swift; path = ../../C/SectionControllers/DDDDiaryListMonthSC.swift; sourceTree = "<group>"; };
+		061B41521E0537A90044F29E /* DDDDiaryListMonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListMonthCell.swift; path = ../../V/CollectionViewCells/DDDDiaryListMonthCell.swift; sourceTree = "<group>"; };
 		061B41551E0656B90044F29E /* DDDRichTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDRichTextView.swift; path = V/DDDRichText/DDDRichTextView.swift; sourceTree = "<group>"; };
 		061B41581E0659780044F29E /* DDDDiaryEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryEditVC.swift; path = C/Diary/DDDDiaryEditVC.swift; sourceTree = "<group>"; };
-		062FFFD71E03FDBD00270E3C /* DDDDiaryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListCell.swift; path = V/CollectionViewCells/DDDDiaryListCell.swift; sourceTree = "<group>"; };
+		062FFFD71E03FDBD00270E3C /* DDDDiaryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListCell.swift; path = ../../V/CollectionViewCells/DDDDiaryListCell.swift; sourceTree = "<group>"; };
+		0649D1A01E630EB600C826E7 /* VPDDDDiaryListModuleAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleAPIDataManager.swift; sourceTree = "<group>"; };
+		0649D1A21E630EB600C826E7 /* VPDDDDiaryListModuleLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleLocalDataManager.swift; sourceTree = "<group>"; };
+		0649D1A41E630EB600C826E7 /* VPDDDDiaryListModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleInteractor.swift; sourceTree = "<group>"; };
+		0649D1A51E630EB600C826E7 /* VPDDDDiaryListModuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleItem.swift; sourceTree = "<group>"; };
+		0649D1A71E630EB600C826E7 /* VPDDDDiaryListModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModulePresenter.swift; sourceTree = "<group>"; };
+		0649D1A91E630EB600C826E7 /* VPDDDDiaryListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleProtocols.swift; sourceTree = "<group>"; };
+		0649D1AB1E630EB600C826E7 /* VPDDDDiaryListModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleView.swift; sourceTree = "<group>"; };
+		0649D1AD1E630EB600C826E7 /* VPDDDDiaryListModuleWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryListModuleWireFrame.swift; sourceTree = "<group>"; };
 		068824141E03F0F0002970DF /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068824171E03F0F0002970DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068824191E03F0F0002970DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,11 +93,22 @@
 		068824371E03F0F0002970DF /* MyDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryUITests.swift; sourceTree = "<group>"; };
 		068824391E03F0F0002970DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0688244A1E03F4B5002970DF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = C/MainViewController.swift; sourceTree = "<group>"; };
-		0688244D1E03F747002970DF /* DDDDiaryListDiarySC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListDiarySC.swift; path = C/SectionControllers/DDDDiaryListDiarySC.swift; sourceTree = "<group>"; };
+		0688244D1E03F747002970DF /* DDDDiaryListDiarySC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DDDDiaryListDiarySC.swift; path = ../../C/SectionControllers/DDDDiaryListDiarySC.swift; sourceTree = "<group>"; };
 		06F095471E09246B0097F12C /* HtmlStringToATTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HtmlStringToATTR.swift; path = H/DiaryHelper/HtmlStringToATTR.swift; sourceTree = "<group>"; };
 		1CA51B751A83413EE39390F4 /* Pods-MyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.release.xcconfig"; sourceTree = "<group>"; };
 		1D2782541092D3C5168B1007 /* Pods_MyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		230925806CF10D3C228C5718 /* VPDDDDiaryHomeListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListInteractor.swift; sourceTree = "<group>"; };
+		24660D804E9ABCA979371722 /* VPDDDDiaryHomeListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListConfigurator.swift; sourceTree = "<group>"; };
+		2646C0E173C4802E7FB37E36 /* VPDDDDiaryHomeListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListRouterInput.swift; sourceTree = "<group>"; };
+		2F544F289464AAD15AF8C209 /* VPDDDDiaryHomeListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListModuleInput.swift; sourceTree = "<group>"; };
+		36B660DF66609F3C1EEBBB42 /* VPDDDDiaryHomeListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListInteractorInput.swift; sourceTree = "<group>"; };
+		526C947395F8E76D0DF56E32 /* VPDDDDiaryHomeListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListPresenter.swift; sourceTree = "<group>"; };
 		60319446D1ECEAFB71310F47 /* Pods-MyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		621DB16EFC3EA172188F7855 /* VPDDDDiaryHomeListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListRouter.swift; sourceTree = "<group>"; };
+		7B41917C88E1C12A22E30F02 /* VPDDDDiaryHomeListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListViewInput.swift; sourceTree = "<group>"; };
+		85743D3FD9C1787D70294C4D /* VPDDDDiaryHomeListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListInteractorOutput.swift; sourceTree = "<group>"; };
+		9C01B35679D2053A01FFB421 /* VPDDDDiaryHomeListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListViewOutput.swift; sourceTree = "<group>"; };
+		C6420AC7B9B7A9D3BF08C842 /* VPDDDDiaryHomeListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPDDDDiaryHomeListInitializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +172,91 @@
 		062FFFD61E03FD5500270E3C /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				062FFFD71E03FDBD00270E3C /* DDDDiaryListCell.swift */,
-				061B41521E0537A90044F29E /* DDDDiaryListMonthCell.swift */,
 			);
 			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		0649D19D1E630EB600C826E7 /* VPDDDDiaryListModule */ = {
+			isa = PBXGroup;
+			children = (
+				0649D19E1E630EB600C826E7 /* DataManager */,
+				0649D1A31E630EB600C826E7 /* Interactor */,
+				0649D1A61E630EB600C826E7 /* Presenter */,
+				0649D1A81E630EB600C826E7 /* Protocols */,
+				0649D1AA1E630EB600C826E7 /* View */,
+				0649D1AC1E630EB600C826E7 /* WireFrame */,
+			);
+			path = VPDDDDiaryListModule;
+			sourceTree = "<group>";
+		};
+		0649D19E1E630EB600C826E7 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0649D19F1E630EB600C826E7 /* API */,
+				0649D1A11E630EB600C826E7 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0649D19F1E630EB600C826E7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1A01E630EB600C826E7 /* VPDDDDiaryListModuleAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0649D1A11E630EB600C826E7 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1A21E630EB600C826E7 /* VPDDDDiaryListModuleLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0649D1A31E630EB600C826E7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1A41E630EB600C826E7 /* VPDDDDiaryListModuleInteractor.swift */,
+				0649D1A51E630EB600C826E7 /* VPDDDDiaryListModuleItem.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0649D1A61E630EB600C826E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1A71E630EB600C826E7 /* VPDDDDiaryListModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0649D1A81E630EB600C826E7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1A91E630EB600C826E7 /* VPDDDDiaryListModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0649D1AA1E630EB600C826E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1AB1E630EB600C826E7 /* VPDDDDiaryListModuleView.swift */,
+				062FFFD71E03FDBD00270E3C /* DDDDiaryListCell.swift */,
+				061B41521E0537A90044F29E /* DDDDiaryListMonthCell.swift */,
+				0688244D1E03F747002970DF /* DDDDiaryListDiarySC.swift */,
+				061B41501E05317C0044F29E /* DDDDiaryListMonthSC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0649D1AC1E630EB600C826E7 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				0649D1AD1E630EB600C826E7 /* VPDDDDiaryListModuleWireFrame.swift */,
+			);
+			path = WireFrame;
 			sourceTree = "<group>";
 		};
 		0688240B1E03F0F0002970DF = {
@@ -147,6 +268,7 @@
 				068824151E03F0F0002970DF /* Products */,
 				509DCD55DCD146AF5465FDF8 /* Pods */,
 				8B6BF47029C57536FE08FD45 /* Frameworks */,
+				541A2259D10B10D79A97E37E /* .. */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +325,7 @@
 		068824461E03F2A7002970DF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0649D19D1E630EB600C826E7 /* VPDDDDiaryListModule */,
 				06F095451E0923360097F12C /* H */,
 				068824491E03F2E7002970DF /* M */,
 				068824481E03F2DE002970DF /* C */,
@@ -241,8 +364,6 @@
 		0688244C1E03F6D9002970DF /* SectionControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0688244D1E03F747002970DF /* DDDDiaryListDiarySC.swift */,
-				061B41501E05317C0044F29E /* DDDDiaryListMonthSC.swift */,
 			);
 			name = SectionControllers;
 			sourceTree = "<group>";
@@ -272,12 +393,87 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		541A2259D10B10D79A97E37E /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				9586E6B284EC5E4DB092A1E4 /* VIPERFILES */,
+			);
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8436BB843098669C76DB9A8B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				24660D804E9ABCA979371722 /* VPDDDDiaryHomeListConfigurator.swift */,
+				C6420AC7B9B7A9D3BF08C842 /* VPDDDDiaryHomeListInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		881756FCC2471B636C6A6A30 /* VPDDDDiaryHomeList */ = {
+			isa = PBXGroup;
+			children = (
+				96831DF1F369809E02963318 /* View */,
+				90920DBCE8B71A4D00775B3C /* Presenter */,
+				9E905D43FE1B0B2AAC9C742C /* Interactor */,
+				C6FB278D2BAC8CA08EFF0593 /* Router */,
+				8436BB843098669C76DB9A8B /* Configurator */,
+			);
+			path = VPDDDDiaryHomeList;
+			sourceTree = "<group>";
+		};
 		8B6BF47029C57536FE08FD45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1D2782541092D3C5168B1007 /* Pods_MyDiary.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90920DBCE8B71A4D00775B3C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F544F289464AAD15AF8C209 /* VPDDDDiaryHomeListModuleInput.swift */,
+				526C947395F8E76D0DF56E32 /* VPDDDDiaryHomeListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9586E6B284EC5E4DB092A1E4 /* VIPERFILES */ = {
+			isa = PBXGroup;
+			children = (
+				881756FCC2471B636C6A6A30 /* VPDDDDiaryHomeList */,
+			);
+			path = VIPERFILES;
+			sourceTree = "<group>";
+		};
+		96831DF1F369809E02963318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B41917C88E1C12A22E30F02 /* VPDDDDiaryHomeListViewInput.swift */,
+				9C01B35679D2053A01FFB421 /* VPDDDDiaryHomeListViewOutput.swift */,
+				0209CDA381DAD583122D12C4 /* VPDDDDiaryHomeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E905D43FE1B0B2AAC9C742C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				36B660DF66609F3C1EEBBB42 /* VPDDDDiaryHomeListInteractorInput.swift */,
+				85743D3FD9C1787D70294C4D /* VPDDDDiaryHomeListInteractorOutput.swift */,
+				230925806CF10D3C228C5718 /* VPDDDDiaryHomeListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C6FB278D2BAC8CA08EFF0593 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2646C0E173C4802E7FB37E36 /* VPDDDDiaryHomeListRouterInput.swift */,
+				621DB16EFC3EA172188F7855 /* VPDDDDiaryHomeListRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,14 +664,34 @@
 				061B41511E05317C0044F29E /* DDDDiaryListMonthSC.swift in Sources */,
 				06F095481E09246B0097F12C /* HtmlStringToATTR.swift in Sources */,
 				0688244E1E03F747002970DF /* DDDDiaryListDiarySC.swift in Sources */,
+				0649D1B41E630EB600C826E7 /* VPDDDDiaryListModuleView.swift in Sources */,
 				061B41561E0656B90044F29E /* DDDRichTextView.swift in Sources */,
 				061B41591E0659780044F29E /* DDDDiaryEditVC.swift in Sources */,
 				062FFFD81E03FDBD00270E3C /* DDDDiaryListCell.swift in Sources */,
+				0649D1B31E630EB600C826E7 /* VPDDDDiaryListModuleProtocols.swift in Sources */,
 				061B414F1E0519B10044F29E /* DiaryEnumModel.swift in Sources */,
+				0649D1B21E630EB600C826E7 /* VPDDDDiaryListModulePresenter.swift in Sources */,
+				0649D1AE1E630EB600C826E7 /* VPDDDDiaryListModuleAPIDataManager.swift in Sources */,
 				0688244B1E03F4B5002970DF /* MainViewController.swift in Sources */,
+				0649D1B01E630EB600C826E7 /* VPDDDDiaryListModuleInteractor.swift in Sources */,
 				061B41531E0537A90044F29E /* DDDDiaryListMonthCell.swift in Sources */,
 				0688241A1E03F0F0002970DF /* ViewController.swift in Sources */,
 				068824181E03F0F0002970DF /* AppDelegate.swift in Sources */,
+				BA58F061B300472FE1AA6309 /* VPDDDDiaryHomeListViewInput.swift in Sources */,
+				C6C1D0B65515919F7A7E0B3F /* VPDDDDiaryHomeListViewOutput.swift in Sources */,
+				53AC04BE9EFC8B737E2E52E7 /* VPDDDDiaryHomeListViewController.swift in Sources */,
+				D13948984B7D10C769536071 /* VPDDDDiaryHomeListModuleInput.swift in Sources */,
+				51CFC85C323BD55CB348F387 /* VPDDDDiaryHomeListPresenter.swift in Sources */,
+				3325D50533A1897E690094FB /* VPDDDDiaryHomeListInteractorInput.swift in Sources */,
+				0649D1B11E630EB600C826E7 /* VPDDDDiaryListModuleItem.swift in Sources */,
+				5D373A88C5C09D86FE37FB74 /* VPDDDDiaryHomeListInteractorOutput.swift in Sources */,
+				0649D1AF1E630EB600C826E7 /* VPDDDDiaryListModuleLocalDataManager.swift in Sources */,
+				A48F2035C2BDE8C5D10839CF /* VPDDDDiaryHomeListInteractor.swift in Sources */,
+				B8EE4ABCFB4092B99817E257 /* VPDDDDiaryHomeListRouterInput.swift in Sources */,
+				0649D1B51E630EB600C826E7 /* VPDDDDiaryListModuleWireFrame.swift in Sources */,
+				7CADFA9452E60A943F20FDB0 /* VPDDDDiaryHomeListRouter.swift in Sources */,
+				908AFD6E2DAA2AE1D9FC88D4 /* VPDDDDiaryHomeListConfigurator.swift in Sources */,
+				654F728BB580CDBD014DC9D4 /* VPDDDDiaryHomeListInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
