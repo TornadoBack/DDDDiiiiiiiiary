@@ -10,106 +10,10 @@ import UIKit
 import IGListKit
 
 
-class DDDDiaryListDiaryItem: NSObject {
-    
-    let date: String
-    let time: String
-    let title: String
-    let desc: String
-    let status: String
-    let weatherType: WeatherType
-    let moodType: MoodType
-    let accessoryType: AccessoryStatusType
-    let locationType: LocationStatusType
-    let controllerClass: UIViewController.Type?
-    
-    init(
-        date: String,
-        time: String,
-        title: String,
-        desc: String,
-        status: String,
-        weatherType: WeatherType,
-        moodType: MoodType,
-        accessoryType: AccessoryStatusType,
-        locationType: LocationStatusType,
-        controllerClass:UIViewController.Type?
-        ) {
-        self.date = date
-        self.time = time
-        self.title = title
-        self.desc = desc
-        self.status = status
-        self.weatherType = weatherType
-        self.moodType = moodType
-        self.locationType = locationType
-        self.accessoryType = accessoryType
-        self.controllerClass = controllerClass
-    }
-    
-}
-
-extension DDDDiaryListDiaryItem:IGListDiffable {
-    
-    func diffIdentifier() -> NSObjectProtocol {
-        return title as NSObjectProtocol
-    }
-    
-    func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
-        if self === object {
-            return true
-        }
-        
-        guard let object = object as? DDDDiaryListDiaryItem else {
-            return false
-        }
-        
-        return controllerClass == object.controllerClass
-                && date == object.date
-                && time == object.time
-                && title == object.title
-                && desc == object.desc
-                && status == object.status
-                && weatherType == object.weatherType
-                && moodType == object.moodType
-                && locationType == object.locationType
-                && accessoryType == object.accessoryType
-    }
-}
-
-extension DDDDiaryListDiaryItem:DDDDiaryListCellType {
-    func cellDate() -> String {
-        return self.date
-    }
-    func cellTime() -> String {
-        return self.time
-    }
-    func cellTitle() -> String {
-        return self.title
-    }
-    func cellDesc() -> String {
-        return self.desc
-    }
-    func cellStatus() -> String {
-        return self.status
-    }
-    func cellWeather() -> WeatherType {
-        return self.weatherType
-    }
-    func cellMood() -> MoodType {
-        return self.moodType
-    }
-    func cellLocation() -> LocationStatusType {
-        return self.locationType
-    }
-    func cellAccesory() -> AccessoryStatusType {
-        return self.accessoryType
-    }
-}
 
 class DDDDiaryListDiarySC:IGListSectionController, IGListSectionType  {
     
-    var diaryItem: DDDDiaryListDiaryItem?
+    var diaryItem: DiaryListDayViewModel?
 
     func numberOfItems() -> Int {
         return 1
@@ -138,7 +42,7 @@ class DDDDiaryListDiarySC:IGListSectionController, IGListSectionType  {
     }
     
     func didUpdate(to object: Any) {
-        self.diaryItem = object as? DDDDiaryListDiaryItem
+        self.diaryItem = object as? DiaryListDayViewModel
     }
 
     func didSelectItem(at index: Int) {

@@ -11,11 +11,14 @@ protocol VPDDDDiaryListModuleViewProtocol: class
     /**
     * Add here your methods for communication PRESENTER -> VIEW
     */
+    
+    func showView(_ data:[Any])
 }
 
 protocol VPDDDDiaryListModuleWireFrameProtocol: class
 {
     static func presentVPDDDDiaryListModuleModule(fromView view: AnyObject)
+    func presentVPDDDDiaryEditModuleModule()
     /**
     * Add here your methods for communication PRESENTER -> WIREFRAME
     */
@@ -29,6 +32,8 @@ protocol VPDDDDiaryListModulePresenterProtocol: class
     /**
     * Add here your methods for communication VIEW -> PRESENTER
     */
+    
+    func fetchUpdateData()
 }
 
 protocol VPDDDDiaryListModuleInteractorOutputProtocol: class
@@ -36,6 +41,8 @@ protocol VPDDDDiaryListModuleInteractorOutputProtocol: class
     /**
     * Add here your methods for communication INTERACTOR -> PRESENTER
     */
+    
+    func onSuccessData(_ data:[Any])
 }
 
 protocol VPDDDDiaryListModuleInteractorInputProtocol: class
@@ -46,6 +53,9 @@ protocol VPDDDDiaryListModuleInteractorInputProtocol: class
     /**
     * Add here your methods for communication PRESENTER -> INTERACTOR
     */
+    
+    func fetchUpdateData()
+    
 }
 
 protocol VPDDDDiaryListModuleDataManagerInputProtocol: class

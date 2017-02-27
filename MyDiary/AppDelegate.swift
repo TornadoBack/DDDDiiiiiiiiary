@@ -32,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabVc.addChildViewController(
             UINavigationController(rootViewController: vpVC))
-        tabVc.addChildViewController(
-            UINavigationController(rootViewController: MainViewController()))
+//        tabVc.addChildViewController(
+//            UINavigationController(rootViewController: MainViewController()))
         
         window?.rootViewController = tabVc
     }

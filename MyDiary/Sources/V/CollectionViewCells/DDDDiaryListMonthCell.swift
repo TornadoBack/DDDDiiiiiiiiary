@@ -9,12 +9,6 @@
 import UIKit
 import SnapKit
 
-protocol DDDDiaryListMonthCellType {
-    func cellMonth() -> MonthEnum
-}
-
-
-
 class DDDDiaryListMonthCell: UICollectionViewCell {
     //MARK:- view life cycle
     override init(frame:CGRect) {
@@ -36,8 +30,8 @@ class DDDDiaryListMonthCell: UICollectionViewCell {
         }
     }
     
-    func setModel(model:DDDDiaryListMonthCellType) {
-        monthLable.text = model.cellMonth().rawValue
+    func setModel(model:DiaryListMonthViewModel) {
+        monthLable.text = model.month
     }
     
     

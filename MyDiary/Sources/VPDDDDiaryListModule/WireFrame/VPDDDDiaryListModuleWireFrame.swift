@@ -47,4 +47,10 @@ class VPDDDDiaryListModuleWireFrame: VPDDDDiaryListModuleWireFrameProtocol
         
         return view as! UIViewController
     }
+    
+    func presentVPDDDDiaryEditModuleModule(){
+//        let vc = DDDDiaryEditVC()
+//        navigationController?.pushViewController(vc, animated: true)
+    
+    }
 }

@@ -9,19 +9,6 @@
 import UIKit
 import SnapKit
 
-
-protocol DDDDiaryListCellType {
-    func cellDate() -> String
-    func cellTime() -> String
-    func cellTitle() -> String
-    func cellDesc() -> String
-    func cellStatus() -> String
-    func cellWeather() -> WeatherType
-    func cellMood() -> MoodType
-    func cellLocation() -> LocationStatusType
-    func cellAccesory() -> AccessoryStatusType
-}
-
 class DDDDiaryListCell: UICollectionViewCell {
 
     //MARK:- view life cycle
@@ -125,50 +112,17 @@ class DDDDiaryListCell: UICollectionViewCell {
 
 //MARK:- setModel
     
-    func setModel(model:DDDDiaryListCellType) {
-        dateLable.text = model.cellDate()
-        timeLable.text = model.cellTime()
-        titleLable.text = model.cellTitle()
-        descLable.text = model.cellDesc()
-        statusLable.text = model.cellStatus()
+    func setModel(model:DiaryListDayViewModel) {
+        dateLable.text = model.date
+        timeLable.text = model.time
+        titleLable.text = model.title
+        descLable.text = model.desc
+        statusLable.text = model.status
         
-        switch model.cellWeather() {
-        case .Sunny:
-            break
-        case .Cloudy:
-            break
-        case .Windy:
-            break
-        case .Rainy:
-            break
-        case .Snowy:
-            break
-        case .Foggy:
-            break
-        }
-        
-        switch model.cellMood() {
-        case .Happy:
-            break
-        case .Normal:
-            break
-        case .Sad:
-            break
-        }
-        
-        switch model.cellLocation() {
-        case .Defined:
-            break
-        case .Undefined:
-            break
-        }
-        
-        switch model.cellAccesory() {
-        case .Defined:
-            break
-        case .Undefined:
-            break
-        }
+        weatherImage.image = model.weatherImage
+        moodImage.image = model.moodImage
+        accessoryImage.image = model.accessoryImage
+        locationImage.image = model.locationImage
     }
     
     

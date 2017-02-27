@@ -17,14 +17,15 @@ class VPDDDDiaryListModuleView: UIViewController, VPDDDDiaryListModuleViewProtoc
     
     let collectionView = IGListCollectionView(frame:CGRect.zero, collectionViewLayout:UICollectionViewFlowLayout())
     
-    let demos = [
-        DDDDiaryListMonthItem(month: .Oct),
-        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil),
-        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil),
-        DDDDiaryListMonthItem(month: .Jan),
-        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil),
-        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil)
-        ] as [Any]
+//    let demos = [
+//        DDDDiaryListMonthItem(month: .Oct),
+//        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil),
+//        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil),
+//        DDDDiaryListMonthItem(month: .Jan),
+//        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil),
+//        DDDDiaryListDiaryItem(date: "5", time: "11:10", title: "东京生活3", desc: "There are", status: "水", weatherType: .Sunny, moodType: .Happy, accessoryType: .Defined, locationType: .Defined, controllerClass: nil)
+//        ] as [Any]
+    var demos:[Any] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,18 @@ class VPDDDDiaryListModuleView: UIViewController, VPDDDDiaryListModuleViewProtoc
         
         
         // Do any additional setup after loading the view.
+        presenter?.fetchUpdateData()
     }
+    
+    
+    func showView(_ data:[Any]) {
+        demos = data
+        adapter.reloadData { (Bool) in
+            
+        }
+    }
+    
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -65,8 +77,8 @@ class VPDDDDiaryListModuleView: UIViewController, VPDDDDiaryListModuleViewProtoc
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
         switch object {
-        case is DDDDiaryListMonthItem:   return DDDDiaryListMonthSC()
-        case is DDDDiaryListDiaryItem: return DDDDiaryListDiarySC()
+        case is DiaryListMonthViewModel:   return DDDDiaryListMonthSC()
+        case is DiaryListDayViewModel: return DDDDiaryListDiarySC()
         default: return DDDDiaryListDiarySC()
         }
     }

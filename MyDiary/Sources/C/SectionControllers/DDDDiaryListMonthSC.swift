@@ -10,47 +10,9 @@ import UIKit
 import Foundation
 import IGListKit
 
-class DDDDiaryListMonthItem {
-    
-    let month: MonthEnum
-    
-    init(
-        month: MonthEnum
-        ) {
-        self.month = month
-    }
-    
-}
-
-extension DDDDiaryListMonthItem:IGListDiffable {
-    
-    func diffIdentifier() -> NSObjectProtocol {
-        return month.rawValue as NSObjectProtocol
-    }
-    
-    func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
-        if self === object {
-            return true
-        }
-        
-        guard let object = object as? DDDDiaryListMonthItem else {
-            return false
-        }
-        
-        return month == object.month
-    }
-}
-
-extension DDDDiaryListMonthItem:DDDDiaryListMonthCellType {
-    func cellMonth() -> MonthEnum {
-        return month
-    }
-}
-
-
 class DDDDiaryListMonthSC: IGListSectionController,IGListSectionType {
     
-    var monthItem: DDDDiaryListMonthItem?
+    var monthItem: DiaryListMonthViewModel?
     
     func numberOfItems() -> Int {
         return 1
@@ -73,7 +35,7 @@ class DDDDiaryListMonthSC: IGListSectionController,IGListSectionType {
     }
     
     func didUpdate(to object: Any) {
-        self.monthItem = object as? DDDDiaryListMonthItem
+        self.monthItem = object as? DiaryListMonthViewModel
     }
     
     func didSelectItem(at index: Int) {

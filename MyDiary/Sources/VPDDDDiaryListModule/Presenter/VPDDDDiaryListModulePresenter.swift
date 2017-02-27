@@ -12,4 +12,28 @@ class VPDDDDiaryListModulePresenter: VPDDDDiaryListModulePresenterProtocol, VPDD
     var wireFrame: VPDDDDiaryListModuleWireFrameProtocol?
     
     init() {}
+    
+    func fetchUpdateData() {
+        interactor?.fetchUpdateData()
+    }
+    
+    func onSuccessData(_ data:[Any]) {
+        
+        var temp:[Any] = [Any]()
+        
+        for item in data {
+            if (item is DiaryListDayModel) {
+                let model = DiaryListDayViewModel.viewModelFromModel(item as! DiaryListDayModel)
+                temp.append(model)
+                
+            }
+            if (item is DiaryListMonthModel) {
+                let model = DiaryListMonthViewModel.viewModelFromModel(item as! DiaryListMonthModel)
+                temp.append(model)
+            }
+        }
+        
+        
+        view?.showView(temp)
+    }
 }
