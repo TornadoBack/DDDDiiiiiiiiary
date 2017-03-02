@@ -10,7 +10,7 @@ import UIKit
 import IGListKit
 
 class DiaryViewModels: NSObject {
-
+    
 }
 
 
@@ -58,49 +58,61 @@ class DiaryListDayViewModel: NSObject {
         vModel.desc = model.desc
         vModel.status = model.status
         
-            switch model.weatherType {
-            case .Sunny:
-                break
-            case .Cloudy:
-                break
-            case .Windy:
-                break
-            case .Rainy:
-                break
-            case .Snowy:
-                break
-            case .Foggy:
-                break
-            }
+        var weatherString = ""
         
-            switch model.moodType {
-            case .Happy:
-                break
-            case .Normal:
-                break
-            case .Sad:
-                break
-            }
+        switch model.weatherType {
+        case .Sunny:
+            weatherString = "Sunny"
+            break
+        case .Cloudy:
+            weatherString = "Cloudy"
+            break
+        case .Windy:
+            weatherString = "Windy"
+            break
+        case .Rainy:
+            weatherString = "Rainy"
+            break
+        case .Snowy:
+            weatherString = "Snowy"
+            break
+        case .Foggy:
+            weatherString = "Foggy"
+            break
+        }
+        vModel.weatherImage = UIImage(named: weatherString)
         
-            switch model.locationType {
-            case .Defined:
-                break
-            case .Undefined:
-                break
-            }
-            
-            switch model.accessoryType {
-            case .Defined:
-                break
-            case .Undefined:
-                break
-            }
-    
-    return vModel
+        var moodString = ""
+        switch model.moodType {
+        case .Happy:
+            moodString = "Happy"
+            break
+        case .Normal:
+            moodString = "Normal"
+            break
+        case .Sad:
+            moodString = "Sad"
+            break
+        }
+        vModel.moodImage = UIImage(named: moodString)
+        
+        switch model.locationType {
+        case .Defined:
+            break
+        case .Undefined:
+            break
+        }
+        
+        switch model.accessoryType {
+        case .Defined:
+            break
+        case .Undefined:
+            break
+        }
+        
+        return vModel
         
     }
-    
-    
     
 }
 
@@ -144,12 +156,12 @@ class DiaryListMonthViewModel: NSObject {
     
     class func viewModelFromModel(_ model:DiaryListMonthModel) -> DiaryListMonthViewModel {
         
-    let vModel = DiaryListMonthViewModel(month: model.month.rawValue)
-    
-    return vModel
-    
+        let vModel = DiaryListMonthViewModel(month: model.month.rawValue)
+        
+        return vModel
+        
     }
-
+    
 }
 
 extension DiaryListMonthViewModel:IGListDiffable {

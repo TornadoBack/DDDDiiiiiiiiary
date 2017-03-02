@@ -35,11 +35,11 @@ class DDDDiaryListCell: UICollectionViewCell {
     
     let CellVerticalMargin:NSInteger = 6
     let CellHorizonMargin:NSInteger = 20
-    let DateLeftMargin:NSInteger = 12
+    let DateLeftMargin:NSInteger = 10
     let DateTopMargin:NSInteger = 8
     let TimeLeftMargin:NSInteger = 8
     let TimeTopMargin:NSInteger = 8
-    let IconRightMargin:NSInteger = 12
+    let IconRightMargin:NSInteger = 10
     let AccesoryRightMargin:NSInteger = 20
     
     private func p_layoutSubViews(){
@@ -54,12 +54,9 @@ class DDDDiaryListCell: UICollectionViewCell {
         dateLable.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(containerView).offset(DateTopMargin)
             make.left.equalTo(containerView).offset(DateLeftMargin)
-//            make.width.equalTo(40)
-//            make.height.equalTo(40)
         }
         
         statusLable.snp.makeConstraints { (make) -> Void in
-//            make.top.equalTo(dateLable.snp.bottom).offset(4)
             make.bottom.equalTo(containerView).offset(-4)
             make.centerX.equalTo(dateLable)
         }
@@ -67,7 +64,7 @@ class DDDDiaryListCell: UICollectionViewCell {
         timeLable.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(containerView).offset(TimeTopMargin)
             make.left.equalTo(dateLable.snp.right).offset(TimeLeftMargin)
-            make.right.equalTo(weatherImage.snp.left).offset(5)
+            make.right.equalTo(weatherImage.snp.left).offset(-5)
         }
         
         titleLable.snp.makeConstraints { (make) -> Void in
@@ -83,8 +80,8 @@ class DDDDiaryListCell: UICollectionViewCell {
         }
         
         locationImage.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(titleLable)
-            make.right.equalTo(containerView).offset(IconRightMargin)
+            make.top.equalTo(timeLable)
+            make.right.equalTo(containerView).offset(-IconRightMargin)
             make.width.equalTo(22)
             make.height.equalTo(22)
         }
@@ -108,6 +105,9 @@ class DDDDiaryListCell: UICollectionViewCell {
             make.width.equalTo(24)
         }
         
+        dateLable.setContentHuggingPriority(UILayoutPriorityRequired, for: UILayoutConstraintAxis.horizontal)
+        
+        statusLable.setContentHuggingPriority(UILayoutPriorityRequired, for: UILayoutConstraintAxis.horizontal)
     }
 
 //MARK:- setModel
@@ -143,8 +143,8 @@ class DDDDiaryListCell: UICollectionViewCell {
     lazy var dateLable: UILabel = {
         let lable = UILabel()
         lable.numberOfLines = 1
-        lable.font = UIFont.systemFont(ofSize: 46)
-        lable.textAlignment = .center
+        lable.font = UIFont.systemFont(ofSize: 36)
+//        lable.textAlignment = .center
         return lable
     }()
     
@@ -158,7 +158,7 @@ class DDDDiaryListCell: UICollectionViewCell {
     lazy var titleLable:UILabel = {
         let lable = UILabel()
         lable.numberOfLines = 1
-        lable.font = UIFont.systemFont(ofSize: 23)
+        lable.font = UIFont.systemFont(ofSize: 17)
         return lable
     }()
     
@@ -172,7 +172,7 @@ class DDDDiaryListCell: UICollectionViewCell {
     lazy var statusLable:UILabel = {
         let lable = UILabel()
         lable.numberOfLines = 1
-        lable.font = UIFont.systemFont(ofSize: 20)
+        lable.font = UIFont.systemFont(ofSize: 15)
         lable.textAlignment = .center
         return lable
     }()
